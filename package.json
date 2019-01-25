@@ -5,6 +5,7 @@
   "scripts": {
     "example": "ts-node example",
     "test": "jest",
+    "test:coverage": "jest --coverage",
     "prettier:all": "prettier --write './**/*.{js,ts,md,json,yml}'",
     "precommit": "pretty-quick --staged"
   },
