@@ -1,15 +1,11 @@
 import { makeOps } from '../../lib/ops';
 
-test('should have one inserted character', () => {
-  const ops = makeOps('', 'a');
-  expect(ops).toEqual([{ op: 'insert', value: 'a' }]);
-});
-
 test('should have two retained characters and one deleted character', () => {
-  const ops = makeOps('abc', 'ab');
+  const ops = makeOps('abc', 'abd');
   expect(ops).toEqual([
     { op: 'retain', value: 'ab' },
-    { op: 'delete', value: 'c' }
+    { op: 'delete', value: 'c' },
+    { op: 'insert', value: 'd' }
   ]);
 });
 

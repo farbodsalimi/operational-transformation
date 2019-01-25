@@ -31,9 +31,6 @@ export function makeOps(prevText = '', currentText = '') {
           value: component[1]
         });
         break;
-
-      default:
-        break;
     }
   });
 
