@@ -12,7 +12,7 @@ cache:
 env:
   global:
     - NODE_ENV=test
-    - CC_TEST_REPORTER_ID=
+    - CC_TEST_REPORTER_ID=9c4c59199acd9c2554329c7d3357064dc7a4e726e7e4fdc74f3e5ce22d6f36e9
 
 before_script:
   - npm install -g yarn
